@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+img {
+  display: inline-block;
+  float:left;
+  width:40%;
+}
+.headerLogo {
+float:left;
+margin:auto;
+display:inline-block;
+}   
+
+.headerText {
+margin-top: 30px;
+float: right;
+color:purple;
+position: relative;
+display:underline-block;
+}
+.clear{ clear: both};
+.nav li{
+  display: inline-block;
+  margin-left: 15%;
+ }
+a.link{
+ color:purple;
+}
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}​
+div.details label       { text-align:left; }
+div.details label:after { content: ":"; }
+input.radio { display: inline; }
+input.checkbox { display: inline; }
+input.same { display: inline; }
+input.text { display: inline; }
+
+</style>
+</head>
+<body>
+<div class="headerText"><a href="https://serc.iiit.ac.in/rdip/"><h2>RDIP</h2></a></div>
+<div class="headerLogo"><a href="https://www.iiit.ac.in/"><img src="https://www.iiit.ac.in/img/iiit-new.png" width="200" height="140"></a></div>
+<div class="clear">
+<nav>
+<ul>
+  <li><a href="homepage.html" target="_self">Home</a></li>
+  <li><a href="registration.html">Registration Form</a></li>
+  
+</ul>
+</nav>
+</div>
+</div><br>
+<form method="get" action= "details.html" target="_self">
+<div class="details">
+    <label for="fname"><b>First name<b></label>
+    <input type="text" id="fname" name="name" required>
+</div><br>
+<div class="details">
+    <label for="email"><b>E-mail<b></label>
+     <input type="email" id="email" name="email" required>
+</div><br>
+<div class="details">
+    <label><b>Phone No<b></label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+</div><br>
+<div class="details">
+    <label><b>Gender<b></label>
+	<label for="Male"> Male</label>
+	<input type="radio" class="radio" name="gender" id="Male" value="Male">
+	<label for="Female"> Female</label>
+    <input type="radio" class="radio" name="gender" id="Female" value="Female">
+	<label for="Other"> Other</label>
+    <input type="radio" class="radio" name="gender" id="Other" value="Other">
+</div><br>	
+	
+<div class="details">
+    <label><b>Reason for RDIP<b></label>
+  <input type="checkbox" class="checkbox" id="Subject1" name="Subject1" value="Subject" required>
+  <label for="Subject1"> HTML</label>
+  <input type="checkbox" class="checkbox" id="Subject2" name="Subject2" value="Subject" required>
+  <label for="Subject2"> CSS</label>
+  <input type="checkbox" class="checkbox" id="Subject3" name="Subject3" value="Subject" required>
+  <label for="Subject3"> JavaScript</label>
+<div class="details">
+    <label>College</label>
+    <input type="text" required>
+</div><br>
+<div >
+<input type="checkbox" class="text" id="text" name="text" value="text" required>
+<label for="text"> I declare above details given by me are true.</label>
+</div><br>
+<div >
+   <input type="submit" class="same" value="Submit">
+   <input type="reset" class="same" value="Reset">
+  </div> 
+  
+</body>
+</html>
