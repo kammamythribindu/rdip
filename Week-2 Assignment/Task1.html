@@ -1,0 +1,34 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>MythriBindu's Calculator</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="Task1.css">
+	</head>
+	<body>
+		
+			Input 1:<input type="text" class="textinput" id="input1"><br>
+			Input 2:<input type="text" class="textinput" id="input2"><br>
+			<p><strong>NOTE: only Input1 is accepted for Absolute and SquareRoot</strong></p>
+		<table>
+			<tr>
+				<td><button type="button" class="button btn btn-secondary" onclick="add()">Addition</button></td>
+				<td><button type="button" class="button btn btn-danger" onclick="sub()">Subtraction</button></td>
+				<td><button type="button" class="button btn btn-primary" onclick="mul()">Multiplication</button></td>
+			</tr><br>
+			<tr>
+				<td><button type="button" class="button btn btn-dark" onclick="div()">Division</button></td>
+				<td><button type="button" class="button btn btn-success" onclick="per()">Percentage</button></td>
+			</tr><br>
+			<tr>
+				<td><button type="button" class="button btn btn-info" onclick="abs()">Absolute</button></td>
+				<td><button type="button" class="button btn btn-warning" onclick="sqr()">SquareRoot</button></td>
+			</tr>
+		</table><br><br>
+		<h2 id= "result"></h2>
+		
+	</body>
+	<script src="All.js"></script>
+</html>

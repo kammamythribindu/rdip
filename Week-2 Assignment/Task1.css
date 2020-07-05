@@ -1,0 +1,17 @@
+.button{
+	width:170px;
+	height:50px;
+	font-size: 25px;
+	cursor:pointer;
+	margin:2px;
+	border:none
+
+}
+.textinput{
+	width: 280px;
+	margin: 4px;
+	font-size: 25px;
+	padding:6px;
+	border:solid 2px black;
+	background-color:lightblue;
+}
